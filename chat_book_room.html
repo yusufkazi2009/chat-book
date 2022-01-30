@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kwitter Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<body>
+
+
+		<div class="container">
+			<button id="logout" onclick="logout();" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+		
+			<center>
+				<h1 class="header">	
+					Kwitter	
+					<sup>
+						<img src="m2.png">
+					</sup>
+				</h1>
+				<h3 id="user_name" class="color_white">Welcome ysuf!</h3>
+		
+				<div class="form-group input_div_room_page">
+					<label>#Add Room:</label>
+					<input type="text" id="room_name" class="form-control" placeholder="#Room Name">
+				</div>
+                <button onclick=" redirectToRoomName();" class="btn btn-success">#Add Room</button>
+		
+				<h3 class="color_white">#TRENDINGROOMS</h3>
+				<div id="output"><div class="room_name" id="0" onclick="redirectToRoomName(this.id)">#0</div></div>
+				
+			</center>
+		</div>
+		
+		
+		<script src="chat_book_room.js"></script>
+		
+		<iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" tabindex="0" vspace="0" width="100%" id="I0_1639586458885" name="I0_1639586458885" src="https://testkwitter.firebaseapp.com/__/auth/iframe?apiKey=AIzaSyBQyjrjTsIQsGMGcgu-cr1HjszcHi5ZWMk&amp;appName=%5BDEFAULT%5D&amp;v=3.1.0&amp;usegapi=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_GB.VDkQ44Ezt_o.O%2Fam%3DAQ%2Fd%3D1%2Frs%3DAGLTcCPsW3QA51axl5fv9MS10mXn7mleTA%2Fm%3D__features__#id=I0_1639586458885&amp;_gfid=I0_1639586458885&amp;parent=https%3A%2F%2Fmahdihat791.github.io&amp;pfname=&amp;rpctoken=38549457" style="position: absolute; top: -100px; width: 1px; height: 1px;"></iframe></body>
+
+<script src="chat_book_room.js"></script>
+</body>
+</html>
